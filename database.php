@@ -1,11 +1,8 @@
-<?php     $host = "makaj-hardi-server.mysql.database.azure.com";     
+<?php     
+$host = "makaj-hardi-server.mysql.database.azure.com";     
 $user = "lsfgizamib";     
 $pwd = "N5AJS4H282I5N0K8$";     
-$db = "ruapdb";      
-$host = "127.0.0.1:52932";     
-$user = "azure";     
-$pwd = "6#vWHD_$";     
-$db = "localdb";      
+$db = "makaj-hardi-database";      
 $conn = mysqli_connect($host,$user,$pwd);       
 if (mysqli_connect_errno())
 {       echo "Failed to connect to MySQL: " . mysqli_connect_error();       }       
