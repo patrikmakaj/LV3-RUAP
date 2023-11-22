@@ -9,12 +9,6 @@ if (mysqli_connect_errno()) {
 } else {
     echo 'Connected successfully';
 }
-$sql = 'CREATE Database ruapdb';
-if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
-} else {
-    echo "Error creating database: " . $conn->error;
-}
 mysqli_select_db($conn, $db);
 $sql_create = "CREATE TABLE registration_tbl(id INT NOT NULL     AUTO_INCREMENT, PRIMARY KEY(id), name VARCHAR(30), email     VARCHAR(30), date DATE);";
 if ($conn->query($sql_create) === TRUE) {
